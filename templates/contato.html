@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agência de Detetives Sombra - Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <nav>
+    <a style="float: left; margin: 0; padding: 0 20px 0 0;" href="{{url_for('home')}}">Sombra</a>
+    <a href="{{url_for('home')}}">Home</a>
+    <a href="{{url_for('casos')}}">Casos</a>
+    <a href="{{url_for('contato')}}">Contato</a>
+  </nav>
+  <header>
+    <h1>Agência Sombra</h1><br>
+    <p>Protegemos a verdade.</p>
+  </header>
+  <main>
+    <section>
+      <div class="contact-card" style="max-width: 400px; margin: 0 auto; padding: 24px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); background: #2a2a2a; text-align: center;">
+        <img src="{{ url_for('static', filename='caracol.jpg') }}" alt="Detetive Caracol" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 16px;">
+        <h2>Detetive Caracol</h2>
+        <p style="color: #555;">Especialista em investigações lentas, porém certeiras.</p>
+        <ul style="list-style: none; padding: 0; margin: 16px 0;">
+          <li><strong>Email:</strong> caracol@sombra.com</li>
+          <li><strong>Telefone:</strong> (11) 99999-0000</li>
+        </ul>
+      </div>
+    </section>
+    <div style="height: 60px;"></div> <!-- Espaço para o footer -->
+  </main>
+  <footer style="position: fixed; left: 0; bottom: 0; width: 100%; text-align: center;">
+    &copy; 2025 Agência de Detetives Sombra. Desde 1911. Todos os direitos reservados.
+  </footer>
+</body>
+</html>

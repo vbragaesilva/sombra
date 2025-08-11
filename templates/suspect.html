@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspeito</title>
+</head>
+<body>
+    <h1>Listagem dos arquivos de {{ id }}</h1>
+    <hr>
+    <ul style="list-style-type: disc;color: black;">
+        {% for f in files %}
+
+            <li>
+                <a href="/casos/hack_x/{{ id }}/{{ f }}">{{f}}</a>
+            </li>
+
+        {% endfor %}
+    </ul>
+</body>
+</html>
