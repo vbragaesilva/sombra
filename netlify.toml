@@ -7,9 +7,3 @@
   from = "/404"
   to = "/404.html"
   status = 404
-
-  from = "/casos/hack_x/primus/Natalia_Primus_2.png"
-  to = "https://f005.backblazeb2.com/file/itasec/Natalia_Primus_2.png"
-  status = 200
-  force = true
-  headers = { Cache-Control = "public, max-age=31536000, immutable" }
