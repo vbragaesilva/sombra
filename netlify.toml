@@ -1,0 +1,9 @@
+[build]
+  command = "python3 -m pip install -r requirements.txt && python3 build_static.py"
+  publish = "dist"
+
+# Opcional: define a página 404 personalizada
+[[redirects]]
+  from = "/404"
+  to = "/404.html"
+  status = 404
