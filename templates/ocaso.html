@@ -13,47 +13,44 @@
     <a href="{{url_for('contato')}}">Contato</a>
   </nav>
   <header>
-    <h1>Hack do X</h1>
+    <h1>Invasão do X</h1>
   </header>
   <main>
     <section id="suspeitos">
       <h2>Suspeitos</h2>
-      <p style="padding-bottom: 5px;">Arquivos encontrados sobre cada suspeito</p>
+      <p style="padding-bottom: 5px;" class="pcasos">Arquivos encontrados sobre cada suspeito</p>
       <div class="cards">
       <div class="card">
-          <img src="https://placehold.co/300x180" alt="Caso 2">
+          <img src="/static/zweiterpixel.png" alt="Caso 2">
           <a href="{{ url_for('suspeito_caso_hack', susp='zweiter')}}" style="text-decoration: none; color: inherit;">
           <div class="card-content">
             <h3>Hans Zweiter</h3>
-            <p>Um cara alemão</p>
+            <p>Habilidoso com ataques de baixo nível e hardware. Ativista anarquista. Contra o controle da liberdade de expressão</p>
             <!-- O que significa esse sobrenome? -->
           </div>
           </a>
         </div>
       
         <div class="card">
-          <img src="https://placehold.co/300x180" alt="Caso 0">
+          <img src="/static/terceiropixel.png" alt="Caso 0">
             <a href="{{ url_for('suspeito_caso_hack', susp='terceiro')}}" style="text-decoration: none; color: inherit;">
             <div class="card-content">
               <h3>Miguel Terceiro</h3>
-              <p>Meia idade. Belém do Pará. Trabalha com tecnologia</p>
+              <p>Motivado pelo alto potencial financeiro. Proficiente em redes e banco de dados</p>
             </div>
             </a>
         </div>
         <div class="card">
-          <img src="https://placehold.co/300x180" alt="Caso 1">
+          <img src="/static/primuspixel.png" alt="Caso 1">
           <a href="{{ url_for('suspeito_caso_hack', susp='primus')}}" style="text-decoration: none; color: inherit;">
           <div class="card-content">
             <h3>Natália Primus</h3>
-            <p>Uma moça lá</p>
+            <p>Especialista em Social Engineering. Desacordo ideiológico com a diretoria do X</p>
           </div>
         </div>
       </div>
     </section>
-    <div style="height: 60px;"></div>
+    <!-- <div style="height: 60px;"></div> -->
   </main>
-  <footer>
-    &copy; 2025 Agência de Detetives Sombra. Todos os direitos reservados.
-  </footer>
 </body>
 </html>

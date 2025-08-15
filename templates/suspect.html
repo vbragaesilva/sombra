@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suspeito</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_file_listings.css') }}">
 </head>
 <body>
-    <h1>Listagem dos arquivos de {{ id }}</h1>
-    <hr>
-    <ul style="list-style-type: disc;color: black;">
+    <h1 class="file_h1">Listagem dos arquivos de {{ id }}</h1>
+    <ul class="file_list" style="list-style-type: disc;color: black;">
         {% for f in files %}
 
-            <li>
-                <a href="/casos/hack_x/{{ id }}/{{ f }}">{{f}}</a>
+            <li class="li_files">
+                {% if f.endswith('.html') %}
+                    <a class="file_link" href="/casos/hack_x/{{ id }}/{{ f }}" download>{{ f }}</a>
+                {% else %}
+                    <a class="file_link" href="/casos/hack_x/{{ id }}/{{ f }}">{{ f }}</a>
+                {% endif %}
             </li>
 
         {% endfor %}

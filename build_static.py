@@ -16,7 +16,7 @@ SUSPECTS_DIR = ROOT_DIR / "suspeitos"
 DIST_DIR = ROOT_DIR / "dist"
 
 # Limite de tamanho para arquivos copiados (MB) para evitar estouro de limites no deploy
-DEFAULT_MAX_FILE_MB = 50
+DEFAULT_MAX_FILE_MB = 501
 MAX_FILE_MB = int(os.getenv("MAX_FILE_MB", str(DEFAULT_MAX_FILE_MB)))
 MAX_FILE_BYTES = MAX_FILE_MB * 1024 * 1024
 

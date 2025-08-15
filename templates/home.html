@@ -15,34 +15,53 @@
   </nav>
   <header>
     <h1>Agência Sombra</h1><br>
-    <p>Protegemos a verdade.</p>
+    <p>我们捍卫真相</p>
   </header>
-  <main>
-    <section class="intro">
-      <h2>Quem Somos</h2>
-      <p>Na Agência de Detetives Sombra, nossa missão é trazer à luz a verdade oculta por trás dos casos mais complexos. Nossa equipe especializada combina métodos tradicionais e tecnologia de ponta para entregar resultados confiáveis.</p>
+  <main class="container" id="main-content" role="main">
+    <!-- Quem somos -->
+    <section class="intro" aria-labelledby="quem-somos">
+      <h2 id="quem-somos">Quem somos</h2>
+      <p class="tab">
+        Na Agência Sombra investigamos situações complexas com método e respeito. Unimos técnicas tradicionais,
+        perícia digital e documentação rigorosa para transformar suspeitas em fatos comprovados. Nosso trabalho
+        prioriza confidencialidade e clareza: relatórios objetivos, cadeia de custódia preservada e recomendações
+        práticas para cada caso.
+      </p>
     </section>
-    <section class="intro">
-      <h2>Nossos Serviços</h2>
-      <div class="features">
-        <div class="feature-card">
-          <h3>Investigação Criminal</h3>
-          <p>Análise de cenas de crime, entrevistas e coleta de evidências.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Segurança Corporativa</h3>
-          <p>Auditorias, investigações internas e prevenção de fraudes.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Rastreamento Digital</h3>
-          <p>Recuperação de dados, perícia em redes e monitoramento online.</p>
-        </div>
+
+    <!-- Nossos serviços -->
+    <section class="intro" aria-labelledby="nossos-servicos">
+      <h2 id="nossos-servicos">Nossos serviços</h2>
+
+      <div class="features home" role="list">
+        <article class="feature-card" role="listitem" aria-labelledby="svc-criminal">
+          <h3 id="svc-criminal">Investigação Criminal</h3>
+          <p class="tab">Coleta e análise de evidências, entrevistas e reconstrução de fatos para apoiar processos legais ou esclarecer incidentes.</p>
+        </article>
+
+        <article class="feature-card home" role="listitem" aria-labelledby="svc-corporativa">
+          <h3 id="svc-corporativa">Segurança Corporativa</h3>
+          <p class="tab">Auditorias internas, investigação de fraude e recomendações para reduzir riscos operacionais e proteger ativos.</p>
+        </article>
+
+        <article class="feature-card" role="listitem" aria-labelledby="svc-digital">
+          <h3 id="svc-digital">Rastreamento Digital</h3>
+          <p class="tab">Perícia em dispositivos, recuperação de dados e monitoramento online para mapear ações e fontes digitais.</p>
+        </article>
       </div>
     </section>
-    <div style="height: 60px;"></div> <!-- Espaço para o footer -->
+
+    <!-- Como trabalhamos -->
+    <section class="intro home" aria-labelledby="como-trabalhamos">
+      <h2 id="como-trabalhamos">Como trabalhamos</h2>
+      <p class="how-we-work tab">
+        Processos documentados, comunicação direta e etapas claras — do levantamento inicial ao relatório final.
+        Priorizamos práticas que preservam evidências e facilitam a tomada de decisão.
+      </p>
+    </section>
+
+
   </main>
-  <footer style="position: fixed; left: 0; bottom: 0; width: 100%; text-align: center;">
-    &copy; 2025 Agência de Detetives Sombra. Desde 1911. Todos os direitos reservados.
-  </footer>
+
 </body>
 </html>
