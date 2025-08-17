@@ -21,5 +21,29 @@
 
         {% endfor %}
     </ul>
+    <audio id="audio" class="audio">
+    <source src="/static/sound.mp3" type="audio/mpeg">
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var audio = document.querySelector("audio");
+        audio.autoplay = true;
+        audio.style.display = "none";
+        var hasPlayed = false;
+        var savedTime = localStorage.getItem('audioTime');
+        if (savedTime) {
+          audio.currentTime = parseFloat(savedTime);
+        }
+        document.body.addEventListener("click", function() {
+          if (!hasPlayed) {
+            audio.play();
+            hasPlayed = true;
+          }
+        });
+        window.addEventListener('beforeunload', function () {
+          localStorage.setItem('audioTime', audio.currentTime);
+        });
+      });
+    </script>
+  </audio>
 </body>
 </html>
