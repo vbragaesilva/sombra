@@ -133,4 +133,11 @@
       height: 150px;
     }
 
+  a.credits {
+    color: rgb(122, 78, 7);
+  }
+
+  a.credits:visited {
+    color: rgb(122, 78, 88);
+  }
     

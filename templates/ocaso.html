@@ -60,6 +60,7 @@
         var audio = document.querySelector("audio");
         audio.autoplay = true;
         audio.style.display = "none";
+        audio.loop = true;
         var hasPlayed = false;
         var savedTime = localStorage.getItem('audioTime');
         if (savedTime) {
@@ -73,6 +74,10 @@
         });
         window.addEventListener('beforeunload', function () {
           localStorage.setItem('audioTime', audio.currentTime);
+        });
+        audio.addEventListener('ended', function() {
+          audio.currentTime = 0;
+          audio.play();
         });
       });
     </script>

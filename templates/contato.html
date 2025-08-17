@@ -21,11 +21,11 @@
     <section>
       <div class="contact-card" style="max-width: 400px; margin: 0 auto; padding: 24px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); background: #2a2a2a; text-align: center;">
         <img src="/static/caracol.jpg" alt="Detetive Caracol" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 16px;">
-        <h2>Detetive Caracol</h2>
+        <h2>Vinicius Braga</h2>
         <p style="color: #555;">Especialista em investigações lentas, porém certeiras.</p>
         <ul style="list-style: none; padding: 0; margin: 16px 0;">
-          <li><strong>Email:</strong> caracol@sombra.com</li>
-          <li><strong>Telefone:</strong> (11) 99999-0000</li>
+          <li><strong>Linkedin:</strong><a class="credits" href="https://www.linkedin.com/in/vbragaesilva/">/in/vbragaesilva/</a></li>
+          <li><strong>Github:</strong> <a class="credits" href="https://github.com/vbragaesilva">github.com</a></li>
         </ul>
       </div>
     </section>
@@ -41,6 +41,7 @@
         var audio = document.querySelector("audio");
         audio.autoplay = true;
         audio.style.display = "none";
+        audio.loop = true;
         var hasPlayed = false;
         var savedTime = localStorage.getItem('audioTime');
         if (savedTime) {
@@ -54,6 +55,11 @@
         });
         window.addEventListener('beforeunload', function () {
           localStorage.setItem('audioTime', audio.currentTime);
+        });
+        // Reinicia e toca automaticamente ao terminar
+        audio.addEventListener('ended', function() {
+          audio.currentTime = 0;
+          audio.play();
         });
       });
     </script>
